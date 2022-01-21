@@ -1,0 +1,214 @@
+/*Empiezo definiendo el contenedor global que contendra las cajas de Partidos y años previos, esto lo hago para poder 
+posicionar las cajas de "partidos" y "años previos" con respecto a este contenedor*/
+.contenedor{
+    width: 100%;
+    height: 100%;
+}
+/*Doy tamaño forma y posición a la caja que contendrá el contenido de la sección "partidos" y la posiciono con la 
+etiqueta "Float" a la izquierda, utilizo solamente "Float", ya que es como lo demanda el ejercicio. Por último 
+establezco un margen general del 1% para conseguir ser lo más fiel posible en cuanto a diseño con la página del 
+ejemplo*/
+
+.partido{
+    margin: 1%;
+    float: left;
+    background-color: rgb(67, 212, 67);
+    width: 18%;
+    height: 35%; /*Preguntar pq aunque cambie el numero no varia el tamaño*/
+}
+/*La clase "titulos" sera utilizada para centrar los títulos que tenga que ir poniendo durante la práctica*/
+.titulos{
+    text-align: center;
+}
+/*Establezco el tamaño del contenedor de las cajas que albergarán dentro los escudos de los equipos*/
+.cajas{
+    width: 100%;
+    height: 40%;
+}
+/*Doy tamaño, posicion (con "float:left"), color y borde a las cajas que contendrán los escudos y nombres de los 
+equipos*/
+.cajaPartido{
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    border: solid 1px black;
+    width: 46.5%;
+    height: auto;
+    background-color: rgb(40, 129, 231);
+}
+/*Con la clase "escudos" doy tamaño y establezco los margenes para las imagenes de los escudos dentro de sus cajas.*/
+.escudos{
+    margin-left: 15%;
+    margin-bottom: 0%;
+    width: 70%;
+    height: 70%;
+    
+}
+/*Con la clase ·nombreEquipos"*/
+.nombreEquipo{
+    text-align: center;
+    margin-top: 0%;
+    font-size: 15px;
+}
+/*Doy tamaño forma y posición a la caja que contendrá el contenido de la sección "años previos" y la posiciono con la 
+etiqueta "Float" a la izquierda, (esto hace que se posicione a la izquierda del último elemento flotante, es decir 
+a la izquierda de la sección "partidos"), utilizo solamente "Float", ya que es como lo demanda el ejercicio. Por último 
+establezco un margen general del 1% para conseguir ser lo más fiel posible en cuanto a diseño con la página del 
+ejemplo*/
+.aprevios{
+    float: left;
+    margin: 1%;
+    background-color: purple;
+    width: 78%;
+    height: 500px; /*Preguntar pq no me deja pasar a pocentaje*/
+}
+/*Doy tamaño, color, margen (con respecto a su contenedor), borde y posición a la primera caja, la del Atlético, ya que 
+esta debe ser la primera, ya que al posicionar solo con "Float:leaft" debemos seguir el orden adecuado para esta función, 
+por esa misma razón también se encuantra la primera en el archivo HTML. */
+.cajaAtleti{
+    float: left;
+    background-color: rgb(21, 189, 189);
+    width: 42%;
+    height: 70%;
+    border: solid 1px black;
+    margin-left: 3%;
+    }
+/*Seguidamente realizo lo mismo con la siguiente caja, la del Barcelona, le doy también posicion "float:leaft" para que
+se posicione seguidamente del último elemento flotate posicionado a la izquierda, que en este caso es la caja del 
+Atlético. Para finalizar con esta caja contenedora, establezco un margen izquierdo de 9.5, para intentar ser lo más fiel 
+a la página del ejemplo.*/
+ .cajaBarcelona{
+    float: left;
+    background-color: rgb(21, 189, 189);
+    width: 42%;
+    height: 70%;
+    border: solid 1px black;
+    margin-left: 9.5%;
+    }
+/*Utilizo la clase "cajaListas" para establecer el tamaño y la altura, que tendrá el contedor que albergará a su vez 
+las 3 cajas que contendrán las listas. */
+.cajaListas{
+    width: 100%;
+    height: 40%;
+    
+}
+/*Con la clase "listas" doy color, tamaño y posición a las cajas que contienen las listas, esto lo realizo con el afán 
+de conseguir la mayor similitud con el ejemplo. Establezco los margenes necesarios para ello y las posiciono con 
+"float:leaft" para que se vayan posicionando una detras de otras de manera ordenada (siguiendo el orden del archivo HTML).
+A parte de esta utilizo la clase "listas1" para poder hacre el cambio de color hover con la lista 1*/
+.listas1{
+    background-color: white;
+    float: left;
+    margin: 1%;
+    width: 31%;
+    height: auto;
+    padding-top: 0px;
+}
+.listas{
+    background-color: white;
+    float: left;
+    margin: 1%;
+    width: 31%;
+    height: auto;
+    padding-top: 0px;
+}
+/*Establezco el tamaño, margenes y posicion de la primera lista.*/
+.aniosLista{
+    
+    margin-top: 5%;
+    width: 71.5%;
+    height: 100%;
+    float: right;
+    font-size: 19px;
+    
+}
+/*Con la clase "textoAniosLista" y sirviendome de la etiqueta "li" de la tabla, consigo dar un margen al contenido de la 
+lista, buscando con ello que se quede de la forma más centrada posible y además le doy color y decoracion (subrayao) 
+al texto.*/
+.textoAniosLista{
+    color: blue;
+    text-decoration: underline blue;
+ }
+li {
+    margin-left: 13%;
+}
+/*con la clase "escudospeque" doy el tamaño adecuado para las imagenes de las listas con los resultados, la lista 2 y 3 
+de la caja del Atlético de madrid.*/
+.escudospeque{
+    width: 17%;
+    height: 17%;
+}
+/*Con la clase "escudosLista" doy posición y margenes a las listas buscando centrarlas, para asi ser fiel a modelo 
+establecido.*/
+.escudosLista {
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+     /*fuente de los numeros de los escudos */
+    
+}
+
+/*Con lo siquiente consigo quitar la decoracion y el color al texto de la lista.*/
+ul li {
+    text-decoration: none;
+    color: black;
+}
+/*con la clase "lista1bar" establezco el tamaño del contendor que albergará la primera lista de la caja del Barcelona. */
+.lista1bar{
+    width: 100%;
+    height: auto;    
+}
+/*Apoyandome en la clase "aniosBar" de la primera lista y de la qtiqueta "li" de la lista, consigo alinear los elementos
+de manera horizontal, con la etiqueta "display:inline", seguido a esto le doy un color de fondo, un padding, un margen,
+color al texto y subrayado del mismo, para conseguir ser lo más fiel al ejemplo.*/
+.aniosBar li{
+    display: inline;
+    background-color: rgb(211, 211, 211);
+    padding: 2%;
+    margin-left: 1%;
+    text-decoration: underline blue;
+    color: blue;
+}
+/*Apoyandome de la clase "aniosBar" le doy un margen a la lista para que esta este lo mas centrada posible, consiguiendo 
+así ser lo mas fiel a ejemplo.*/
+.aniosBar{ 
+    margin-left: 25%;
+}
+/*Edito el contenedor de la lista 2 de la caja del Barcelona Dandole tamaño.*/
+.contenedorlista2Bar{
+    width: 100%;
+    height: 45%;
+}
+/*Doy tamaño, posición y margenes al que será el contenedor de la segunda lista de la caja Años Previos.*/
+.lista2Bar{
+    float: left;
+    margin-left: -5.7%;
+    width: 108%; 
+    height: 100%;
+    display: inline;
+}
+/*Como esta lista principalmente es de imagenes, ayudandome de la clase "imgLista2Bar", le doy tamaño a las mismas.*/
+.imgLista2Bar{
+    width: 18%;
+    height: 20%;
+}
+/*Apoyandome de nuevo en la clase "lista2Bar" y en la etiqueta "li" de la tabla consigo disponer los elemento de la 
+lista de manera horizontal, darles un padding, margen y color de fondo buscando la mayor similitud con el ejemplo.*/
+.lista2Bar li {
+    display: inline;
+    margin: 0px;
+    padding: 2.9%;
+    background-color: rgb(211, 211, 211);
+}
+/*Apoyandome en las clases creadas anteriormente, realizo el hover de la lista 1.*/
+.listas1:hover{
+    background-color: rgb(196, 184, 163);
+}
+.textoAniosLista:hover{
+    color: red;
+}
+
+
+
+

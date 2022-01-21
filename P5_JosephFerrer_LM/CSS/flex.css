@@ -1,0 +1,51 @@
+/*Primeramente doy un margen del 0 % al doby para que asi la página no tenga margenes por ningún lado.*/
+body{
+    margin: 0%;
+}
+/*Doy forma , color y posición, al que va a ser el contenedor de las otras cajas.*/
+.contenedor {
+    display: flex;
+    background-color: cadetblue;
+    width: 100%;
+    height: 70%;
+}
+/*Con la clase "parrafosP" doy tamaño, borde y padding a los que llamaremos, párrafos pequeños ( que son 5 como marca 
+el enunciado)*/
+.parrafosP{
+    width: 16%;
+    padding: 1%;
+    border: solid 1px black;
+    padding: 1%;
+}
+/*Con la clase "parrafosG" doy tamaño, borde y padding al párrafo que es del doble de tamaño que los parrafos pequeños,
+es decir es el párrafo grande, tal y como marca el enunciado. */
+.parrafoG{
+    width: 33%;
+    padding: 1%;
+    border: solid 1px black;
+}
+/*Para hacer que la página sea "responsive" me apoyo en los denominados "Media queri" de felxbox.*/
+
+@media (max-width : 700px){
+    .contenedor {
+        flex-direction: column;
+    }
+    .contenedor div{
+        width: 100%;
+    }
+
+}
+
+/*Apoyandome de la clase creada "imagenes" doy tamaño y margen a las imágenes utilizadas. */
+.imagenes{
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    border: none;
+    width: 90%;
+    height: 20%;
+}
+/*Apoyandome en la clase titulos, centro los distintos títulos que voy utilizando a lo largo de la página*/
+.titulos{
+    text-align: center;
+}

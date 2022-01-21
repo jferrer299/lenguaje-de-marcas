@@ -1,0 +1,147 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    /*Utilizamos el  selector universa "*{}" para que todos los elemantos tengan un "margin" y "padding" iguales 
+    y utilizamos "box-sizing" para que el ancho ocupe tanto como el bording establecido. */
+ }
+ body{
+    background-image: url('fondo.png');
+    /*Establezco un fondo en el body con la etiqueta "background-image*/
+ }
+ 
+
+form {
+    background-color:rgb(82, 5, 133);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 40px;
+    box-shadow: 7px 13px 37px;
+    /* Abrimos la etiqueta de "form" para editar el formulario, al cual hemos dado un color de fondo con la etiqueta 
+    "background-color", hemos dado un ancho de 400 pixeles con la etiqueta "width". He utilizado la etiqueta de 
+    "padding" para dar un margen interior y que asi no este el contenido del formulario muy pegado al borde, 
+    de esta manera también conseguimos que aparezcan las casillas a rellenar del formulario, una debajo de otra, y 
+    no pegadas de manera consecutiva. Se ha establecido un margen superior con la etiqueta "margin-top" para evitar 
+    que este muy pegado al título del formulario y un "margin: auto" para conseguir que el formulario este centrado 
+    en la página y no se desplaze hacia ningún lado. Con la etiqueta "border-radius" se ha conseguido
+    redondear la caja creada que contiene el formulario y por último con la etiqueta "border-shadow" se crea una 
+    sombra alrededor de la caja previamente definida. */
+}
+form h1 {
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 25px;
+    /* Aqui le damos estilo al encabezado h1, que contiene el título del formulario, le damos un color blanco con 
+    la etiqueta "color", establecemos un tamaño de fuente con "font-size" y un estilo de fuente con  "font-style". 
+    Por último establecemos un margen inferior con "margin-bottom" para que haya separación con las casillas del 
+    formulario creado.  */
+}
+.titulosform {
+    
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 18px;
+    /* Se utiliza la clase "titulosform" para editar las estiquetas de los correspondientes imputs y los mensajes
+    de consentimiento, dandoles un color blanco con la etiqueta "color", un estilo de fuente con la etiqueta
+    "font-style" y un tamaño de fuente con la etiqqueta "font-size" */   
+}
+.link{
+    color: white; /* Se crea la clase "link" para el enlace de términos y condiciones, ya que se establecia por
+    defecto el mismo color que el del fondo, esto lo he solucionado dandole color con la etiqueta "color"*/
+}
+.cajones {
+    width: 100%;
+    background: rgb(138, 54, 194);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    margin-top: 10px;
+    /* Se utiliza la clase "cajones" previamente creada para editar los imputs, se establece un ancho del 100% para
+    los imputs con la etiqueta "width", se les da un color diferente al fondo para que sea mas atracticvo al usuario 
+    con la etiqyeta "color", con la etiqueta "padding" conseguimos darle espacio a la casilla que hay ue rellenar.
+    Establecemos un tamaño de letra con la etiqueta "font-size", redondeamos las casillas de los imputs con la 
+    etiqueta "border-radius", damos un color y un estilo a los bordes de las casillas con la etiqueta "border" y 
+    establecemos un margen inferior y superior con "margin-buttom"  y "margin-top" para que no esten tan pegadas las 
+    casillas que hay que rellenar y se cree un espacio entre ellas y con los títulos de las mismas. */
+}
+.boton1 {
+    width: 50%;
+    margin: 10px 85px 10px 85px;
+    background-color:rgb(201, 157, 229) ;
+    padding: 10px;
+    border-radius: 10px;
+    /* Se utiliza la clase botton1 para editar el botón de "Enviar información", para ello se establece un ancho del
+    50% con la etiqueta "width", se establece un margen superior, derecho, inferior e izquierdo (en ese orden) con 
+    la etiqueta "margin", establecemos un color diferente al fondo de la caja del formulario con la etiqueta 
+    "background-color", con la etiqueta "padding" conseguimmos que el texto del botón no este muy pegado a los bordes, 
+    y editamos los bordes con "border-radius" para darles un efecto redondeado.*/
+}
+.boton2 {
+    width: 30%;
+    margin: 10px 120px 10px 120px;
+    background-color:rgb(201, 157, 229) ;
+    padding: 10px;
+    border-radius: 10px;
+    /* Se utiliza la clase botton2 para editar el botón de "Resetear", para ello se establece un ancho del
+    30% con la etiqueta "width", se establece un margen superior, derecho, inferior e izquierdo (en ese orden) con 
+    la etiqueta "margin", establecemos un color diferente al fondo de la caja del formulario con la etiqueta 
+    "background-color", con la etiqueta "padding" conseguimmos que el texto del botón no este muy pegado a los bordes, 
+    y editamos los bordes con "border-radius" para darles un efecto redondeado.*/
+}
+.boton3 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 10px;
+    background: rgb(138, 54, 194);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Se utiliza la clase "boton3" para editar los botones de tipo radio, se le da un tamaño a la fuente con la 
+    etiqueta "font-size", se le da un color a la fuente con la etiqueta "color", se establece un borde al conjunto 
+    de botones con la etiqueta "border" y se le da un color de fondo a la caja resultante con la etiqueta "background", 
+    se establece un padding para que no de la impresion de estar pegado a los bordes. Por último se establecen 
+    margenes superiores e inferiores para que no quede tan pegado con otras casillas de formularios y con el título
+    de la etiqueta de sexo */
+
+}
+.paises {
+    font-size: 18px;
+    background: rgb(138, 54, 194);
+    /*Se utiliza la clase paises para editar las diferentes opciones a la hora de seleccionar nacionalidad, se le da 
+    un tamaño a la fuente con la etiqueta "font-size" y un  color de fondo concorde a los demás colores del formulario 
+    con la etiqueta "background"*/
+}
+.carrusel {
+    background: rgb(138, 54, 194);
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 20px;
+    /*Se utiliza la etiqueta "carrusel" para editar la apariencia del desplegable a la hora de elegir nacionalidad, 
+    se le da un color de fondo acorde con el resto del formulario con la etiqueta "background", se establece un tamaño
+    de fuente con la etiqueta "font-size" y un estilo de fuente con la etiqueta "font-style". Establezco un borde 
+    superior para que no este tan pegado con el título de "Sexo" y así dejar espacio, alineo el texto con la etiqueta
+    "text-aling", doy un y edito el borde con la etiqueta "boder", establezco un "padding" para que el texto no este 
+    tan pegado con los bordes, y por ultimo utilizo la etiqueta "border-radius" para dar un efecto redondeado.*/
+}
+.Validacion {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-style: italic;
+    font-size: 90px;
+    /* Se utiliza la clase "Validacion" para editar el título de pagina que se muestra en pantalla, se alinea el texto 
+    con la etiqueta "text-aling" se establece un margen superior con la etiqueta "margin-top", para que no de la 
+    impresión de que está muy pegado a la parte superior de la página. Se establece un color blanco con la eqtiqueta 
+    "color" , y se da un estilo y tamaño a la fuente con "font-style" y "font-size" respectivamente. */
+}
+

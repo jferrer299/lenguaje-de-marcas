@@ -1,0 +1,23 @@
+body{
+    /*Establezco una imagen como fondo con la etiqueta "backgroung-imae: url*/
+    background-image: url(fondo2.jpg);
+    /*Dandole el valor "no-repeat" a la siguiente etiqueta, consigo que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /*Acontinuación la centro en la página con la etiqueta "background-position" y dandole el valor "center center"*/
+    background-position: center center;
+    /*Después con la etiqueta "background-attachment" y dandole el valor "fixed" consigo que la imagen se quede estatica
+    y no se mueva a la hora de hacer "scroll" en la página.*/
+    background-attachment: fixed;
+    /*Para finalizar, utilizo la etiqueta "background-size para editar el tamaño de la imagen establecida como fondo, 
+    y dandole el valor "cover", para que esta cubra toda la página.*/
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: red;
+    font-size: 17px;
+}
+.links{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}

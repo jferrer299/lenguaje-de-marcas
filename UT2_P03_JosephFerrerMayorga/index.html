@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Se introduce "for" en la etiqueta <label> y  "id" en el <imput> para que al hacer click en la etiqueta nos lleve 
+    directamente para rellenar el imput que la correspondiente. La etiqueta  "placeholder" es utilizada 
+    para dar instruciones de lo que debe rellenar el usuario. Definimos las clases "titulosform", "cajones", "link",
+    "boton1", "boton2","boton3","paises","carrusel" y "validación" para poder editarlas posteriormente 
+    en el archivo CSS adjunto.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form action="login.html" method="get" > <!--Se ha utilizado el metodo get y no el metodo POST para que funicone-->
+        <h1>Formulario de registro</h1>
+        <label class="titulosform" for="dni">DNI</label><br>
+        <input class="cajones" required type="text" id="dni" placeholder="12345656X" maxlength="9"pattern="[0-9]{8}[A-Za-z]{1}"><br>
+        <label class="titulosform" for="apellido">Apellidos</label><br>
+        <input class="cajones" required type="text" id="apellido" maxlength="30" placeholder="Introduce tus Apellidos"><br>
+        <label class="titulosform" for="nombre">Nombre</label><br>
+        <input class="cajones" required type="text" id="nombre" maxlength="15" placeholder="Introduce tu nombre"><br>
+        <label class="titulosform" for="fnacimiento">Fecha de nacimiento</label><br>
+        <input class="cajones" required type="date" id="fnacimiento" value="1999-08-06" min="1950-01-30" max="2020-10-30"><br>
+        
+        <label class="titulosform" for="nacionalidad">Pais de procedencia</label><br>
+            <select class="carrusel"  name="" id="">
+                <option class="paises">Alemania</option>
+                <option class="paises">Argentina</option>
+                <option class="paises">Canadá</option>
+                <option class="paises">Camerún</option>
+                <option class="paises" selected>España</option>
+                <option class="paises">Filipinas</option>
+                <option class="paises">Nigeria</option>
+                <option class="paises">Suecia</option>
+                <option class="paises">Perú</option>
+                <option class="paises">Rusia</option><br>
+            </select><br><br>
+        <label class="titulosform" for="email">Correo electrónico</label><br>
+        <input class="cajones" required type="email" id="email" placeholder="Introduce tu e-mail"><br>
+        <label class="titulosform" for="password">Contraseña</label><br>
+        <input class="cajones" required type="password" id="password" maxlength="10" placeholder="Establezca su contraseña"><br>
+        <label class="titulosform" for="sexo">Sexo</label><br>
+            <section class="boton3">
+            <input type="radio" name="sexo" id="Masculino"><label for="Masculino">Masculino</label><br>
+            <input type="radio" name="sexo" id="Femenino"><label for="Femenino">Femenino</label><br>
+            </section>
+        <label class="titulosform" for="comentarios">Otros comentarios</label><br>
+            <textarea name="comentarios" id="" cols="30" rows="5"></textarea><br>
+        <input required type="checkbox" id="terminos" name="terminos">
+        <label class="titulosform" for="terminos">Estoy de acuerdo  con <a class="link" href ="https://policies.google.com/terms?hl=es" target="_blank">los terminos y condiciones </a></label><br>
+        <input checked type="checkbox" id="mensajes" name="mensales">
+        <label class="titulosform" for="mensajes">Estoy de acuerdo en recibir informacion mediante correo electrónico</label><br>
+        <br>
+        <input class="boton1" type="submit" value="Enviar información" >
+         <input class="boton2" type="reset" value="Restablecer">
+
+    </form>
+
+</body>
+</html>

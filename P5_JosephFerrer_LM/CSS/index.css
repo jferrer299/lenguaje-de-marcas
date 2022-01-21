@@ -1,0 +1,55 @@
+body{
+    /*CSS de equipos, imprelementado por Joseph Ferrer Mayorga*/
+    /*Establezco una imagen como fondo con la etiqueta "backgroung-imae: url*/
+    background-image: url(../imagenes/fondo.png);
+    /*Dandole el valor "no-repeat" a la siguiente etiqueta, consigo que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /*Acontinuación la centro en la página con la etiqueta "background-position" y dandole el valor "center center"*/
+    background-position: center center;
+    /*Después con la etiqueta "background-attachment" y dandole el valor "fixed" consigo que la imagen se quede estatica
+    y no se mueva a la hora de hacer "scroll" en la página.*/
+    background-attachment: fixed;
+    /*Para finalizar, utilizo la etiqueta "background-size para editar el tamaño de la imagen establecida como fondo, 
+    y dandole el valor "cover", para que esta cubra toda la página.*/
+    background-size: cover;
+}
+/*Posiciono y doy tamaño al que será mi lista con los enlaces a las distintas páginas.*/
+.lista{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+    /*Con la etiqueta "font-weight" y "font-family" doy estilo de fuente y la marco como negrita.*/
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Con la etiqueta "text-shadow" doy una ligera sombra al texto de la lista para que se distinga bien del fondo.*/
+    text-shadow: 0px 10px 30px #000;
+    /*Apoyandome principalmente en la etiqueta "backdrop-filter" estableco un fondo blur para la tabla creada con los 
+    enlaces. */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter:blur(15px);
+    background-color: rgba(243, 243, 243, 0.2);
+    /*A continuación le doy un borde sólido y lo redondeo con "border-radius"*/
+    border: solid 1px black;
+    border-radius: 2%;
+    /*Para finalizar le doy al borde una ligera sombra para  sobresaltarlo del fondo.*/
+    box-shadow: 0px 10px 30px rgb(40, 18, 119);
+}
+/*Con la clase crada "links" doy color y quito la decoración al texto.*/
+.links{
+    text-decoration: none;
+    color: black;
+}
+/*Doy un padding a los elementos de la tabla */
+li{
+    padding: 1%;
+}
+/*Le doy un margen a los títulos*/
+h1 h4{
+    margin-left: 10%;
+}
+/*Quito el padding establecido por defecto en la tabla para asi lograr que este del todo centrada. */
+ul{
+    padding: 0%;
+}

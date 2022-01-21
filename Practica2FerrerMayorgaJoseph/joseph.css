@@ -1,0 +1,95 @@
+body{
+    /*CSS de equipos, imprelementado por Joseph Ferrer Mayorga*/
+    /*Establezco una imagen como fondo con la etiqueta "backgroung-imae: url*/
+    background-image: url(fondo.png);
+    /*Dandole el valor "no-repeat" a la siguiente etiqueta, consigo que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /*Acontinuación la centro en la página con la etiqueta "background-position" y dandole el valor "center center"*/
+    background-position: center center;
+    /*Después con la etiqueta "background-attachment" y dandole el valor "fixed" consigo que la imagen se quede estatica
+    y no se mueva a la hora de hacer "scroll" en la página.*/
+    background-attachment: fixed;
+    /*Para finalizar, utilizo la etiqueta "background-size para editar el tamaño de la imagen establecida como fondo, 
+    y dandole el valor "cover", para que esta cubra toda la página.*/
+    background-size: cover;
+}
+.tables {
+    /*Establezco un nuevo margen de las tablas con la etiqueta "margin".*/
+    margin: 50px auto;
+    /*Le doy un nuevo tamaño a la tabla. Con la etiqueta "width" edito el  ancho de la tabla, estableciendolo en 
+    un ancho de 700 pixeles. No utilizo la etiqueta "height", dado a que no quiero limitar la altura o longitud de la
+    tabla, ya que tambien estaría limitando el tamaño de las fotos. */
+    width: 700px;
+    /*Doy un borde sólido de 2 pixeles de color negro con la etiqueta "border".*/
+    border: 2px solid red;
+    /*Alineo hacia el centro todo el texto que contenga la tabla.*/
+    text-align: center;
+    /*Utilizo la etiqueta "border-radius" para redondear ligeramente las esquinas del borde "luminoso" previamente 
+    definido.*/
+    border-radius: 6px;
+    /*Para que el borde establecido sea más estético, utilizamos la etiqueta "box-shadow" para establecer una sombra, 
+    en mi caso roja, alrededor del borde*/
+    box-shadow: 0px 10px 30px red;
+    /*Utilizo la etiqueta "margin" que para nuestro caso, sirve para separar las tablas entre sí, y demas separar 
+    ambas del encabezado de la página y el final de esta.*/
+    margin: 100px auto;
+    /*Apoyandome en la funcion "backdrop-filter" relizo un efecto blur para el fondo de la tabla */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter:blur(15px);
+    background-color: rgba(243, 243, 243, 0.2);
+    /*Con la etiqueta "font-size" modifico el tamaño de la fuente.*/
+    font-size: 19px;
+    /*Con la etiqueta  "font-weight* para modificar la fuente y ponerla en negrita.*/
+    font-weight: bold;
+    /*Con la etiqueta "font-family" cambio la fuente de la tabla*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Por úlitmo con la etiqueta "text-shadow" establezco una sombra para el texto de la tabla con la finalidad de que 
+    se distinga mejor del fondo y asi poder leerlo mejor.*/
+    text-shadow: 0px 10px 30px #000;
+    
+}
+
+.foto_tabla{
+    /*Con las etiquets "width" y "height" edito el ancho y la altura de las imagenes que se encuentran en la tabla.*/
+    width: 200px;
+    height: 200px;
+}
+
+.titulostabla{
+    /*Con la etiqueta "background-color" establezco el rojo como color de fondo de los titulos de la tabla.*/
+    background-color: red;
+    
+}
+table, th, td {
+    /*Con la etiqueta "border" y "border-collapse" esteblezco las líneas de los interiores de las tablas.*/
+    border: 3px solid red;
+    border-collapse: collapse;
+    
+}
+h1{
+    /*Con las etiquetas "color", "text-aling" y "font-size" cambio el color, la alineación y el tamaño de la fuente del encabezado 
+    de la página.*/
+    color: red;
+    text-align: center;
+    font-size: 60px;
+    /*Apoyandome en la funcion "backdrop-filter" relizo un efecto negro blur  para el fondo del encabezado. */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter:blur(15px);
+    background-color: rgba(14, 13, 13, 0.637);
+}
+.nombres{
+    /*Con la etiqueta "font-style" cambio el estilo de los nombres de los luchadores estabeciendo el estilo CURSIVA como manda el enunciado 
+    de la prctica. */
+    font-style: italic;
+}
+.finpagina{
+    /*Con la etiqueta "text-aling" y "background color" doy fondo y alineacion a los links de a bajo de la página*/
+    text-align: center;
+    background-color: rgba(14, 13, 13, 0.637);    
+}
+.links{
+    /*Edito el taaño de la fuente y el color de los links*/
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
